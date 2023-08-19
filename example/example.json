@@ -1,0 +1,55 @@
+[
+	[
+		{
+			"action":"add",
+			"entity":"example",
+			"fields": ["Id", "Name", "Group"],
+			"values": [1, "Test name 1", 1]
+		},
+		{
+			"action":"add",
+			"entity":"example",
+			"fields": ["Id", "Name", "Group"],
+			"values": [2, "Test name 2", 2]
+		},
+		{
+			"action":"add",
+			"entity":"example",
+			"fields": ["Id", "Name", "Group"],
+			"values": [3, "Test name 3", 1]
+		},
+		{
+			"action":"add",
+			"entity":"example",
+			"fields": ["Id", "Name", "Group"],
+			"values": [4, "Test name 4", 2]
+		},
+		{
+			"action":"add",
+			"entity":"example",
+			"fields": ["Id", "Name", "Group"],
+			"values": [5, "Test name 5", 1]
+		},
+		{
+			"action":"get",
+			"entity":"example",
+			"fields": ["Id", "Name"],
+			"filter": {"Group": 1},
+			"limit":3,
+			"offset":3
+		},
+		{
+			"action":"upd",
+			"entity":"example",
+			"fields": ["Name"],
+			"values": ["Test name 5 - updated"],
+			"filter": {"Id": 5}
+		},
+		{
+			"action":"get",
+			"entity":"example",
+			"fields": ["Id", "Name","Group"],
+			"filter": {"Id": 5}
+		}
+	]
+]
